@@ -2,6 +2,33 @@
 # Dynamic Networks
 # Link Prediction
 
+"""
+| Paket                       | Verzija |
+| --------------------------- | ------- |
+| **python**                  | 3.11.13 |
+| **qiskit**                  | 1.4.4   |
+| **qiskit-machine-learning** | 0.8.3   |
+| **qiskit-ibm-runtime**      | 0.43.0  |
+| **macOS**                   | Tahos   |
+| **Apple**                   | M1      |
+
+torch 2.8.0
+dgl==1.1.3
+
+
+https://github.com/forsing
+https://github.com/forsing?tab=repositories
+
+
+Loto Skraceni Sistemi
+https://www.lotoss.info
+ABBREVIATED LOTTO SYSTEMS
+
+
+svih 4532 izvlacenja
+30.07.1985.- 19.12.2025.
+"""
+
 
 import pandas as pd
 import numpy as np
@@ -19,7 +46,7 @@ np.random.seed(SEED)
 
 
 # ================= LOAD CSV (PREVIOUSLY DRAWN COMBINATIONS) =================
-csv_path = "/Users/milan/Desktop/GHQ/data/loto7h_4532_k100.csv"
+csv_path = "/data/loto7h_4532_k100.csv"
 df = pd.read_csv(csv_path)
 
 NODES = list(range(1, 40))
@@ -156,9 +183,11 @@ print("Skor:", best_score)
 print()
 """
 PREDIKCIJA SLEDEĆE 7-ČLANE GRANE (CSV ceo):
-(4, 7, 19, 24, 26, 34, 37)
+(4, 7, x, y, z, 34, 37)
 Skor: 0.9906696023064709
 """
+
+
 
 
 
@@ -172,7 +201,6 @@ Seed je postavljen u:
 4. Node2Vec - Node2Vec (..., seed=SEED)
 5. Bilo koji shuffle u kreiranju kandidata 
    ili negative pairs - koristi isti seed
-
 
 
 Koristili smo CSV prethodno izvučenih 4532 kombinacija.
