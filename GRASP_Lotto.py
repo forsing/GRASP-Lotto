@@ -2,6 +2,13 @@
 # Dynamic Networks
 # Link Prediction
 
+
+
+# https://graphsinspace.net
+# https://tigraphs.pmf.uns.ac.rs
+
+
+
 """
 | Paket                       | Verzija |
 | --------------------------- | ------- |
