@@ -34,8 +34,8 @@ https://www.lotoss.info
 ABBREVIATED LOTTO SYSTEMS
 
 
-svih 4532 izvlacenja
-30.07.1985.- 19.12.2025.
+svih 4584 izvlacenja
+30.07.1985.- 20.03.2026.
 """
 
 # GRASP_Lotto_v2 — poboljšana varijanta.
@@ -58,7 +58,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 SEED = 39
 NODES = list(range(1, 40))
-_DEFAULT_CSV = Path("/Users/4c/Desktop/GHQ/data/loto7hh_4584_k23.csv")
+_DEFAULT_CSV = Path("/data/loto7hh_4584_k23.csv")
 RF_TREES = 300
 TOP_EDGES_DEFAULT = 200
 N2V_DIM = 32
@@ -276,7 +276,7 @@ Computing transition probabilities: 100%|█| 39/39 [00:00<00:00
 Generating walks (CPU: 1): 100%|█| 50/50 [00:00<00:00, 911.18i
 
 PREDIKCIJA SLEDEĆE 7-ČLANE GRANE (CSV ceo):
-(4, 7, 19, 24, 26, 34, 37)
+(4, x, 19, y, 26, z, 37)
 Skor: 0.9906696034174404
 """
 
